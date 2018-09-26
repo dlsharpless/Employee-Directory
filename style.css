@@ -1,0 +1,106 @@
+body {
+    overflow-y: scroll;
+    text-align: center;
+}
+
+button:focus {
+    outline: none;
+}
+
+#navBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+.navButton {
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+}
+
+#navBar button:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.navActive {
+    background-color: lightgray;
+    color: black;
+}
+
+#inputBar {
+    position: absolute;
+    left: 0;
+    top: 290px;
+    width: 100%;
+}
+
+#inputBar input {
+    display: block;
+    margin: 10px auto;
+}
+
+#inputBar button {
+    border: solid 2px;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    width: 133px;
+    margin: auto;
+    font-size: 14px;
+}
+
+#content {
+    position: absolute;
+    left: 0;
+    top: 427px;
+    width: 100%;
+}
+
+.entry {
+    width: 50%;
+    border: solid 1px lightgray;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.entry p {
+    margin: 10px;
+}
+
+@media screen and (min-width: 576px) {
+    #content {
+        top: 337px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #navBar {
+        position: fixed;
+        height: 100%;
+        width: 20%;
+    }
+    #displayView {
+        margin-top: 80px;
+    }
+    #inputBar {
+        top: auto;
+        left: 20%;
+        width: 80%;
+    }
+    #content {
+        top: 57px;
+        left: 20%;
+        width: 80%;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Employee Directory</title>
+</head>
+
+<body>
+  <div id="navBar">
+    <br>
+    <button class="navButton" id="displayView">VIEW</button>
+    <br>
+    <button class="navButton" id="displayAdd">ADD</button>
+    <br>
+    <button class="navButton" id="displayVerify">VERIFY</button>
+    <br>
+    <button class="navButton" id="displayUpdate">UPDATE</button>
+    <br>
+    <button class="navButton" id="displayDelete">DELETE</button>
+    <br>
+  </div>
+  <div id="inputBar">
+    <input id="name" placeholder="Employee Name">
+    <input id="officeNum" placeholder="Office Number">
+    <input id="phoneNum" placeholder="Phone Number">
+    <button id="add">Add</button>
+    <button id="verify">Verify</button>
+    <button id="update">Update</button>
+    <button id="delete">Delete</button>
+  </div>
+  <div id="content" class="col-12 col-md-10">
+    <div class='entry'><p>Welcome to the</p><p>Employee Directory</p></div>
+  </div>
+
+  <script src="dom.js"></script>
+  <script src="employeeList.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
